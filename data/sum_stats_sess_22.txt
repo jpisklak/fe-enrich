@@ -1,0 +1,8 @@
+# A tibble: 4 × 11
+# Groups:   enrichment [2]
+  enrichment trial_expose        n      m    df alpha t_crit     se   moe  ci_low ci_top
+  <fct>      <fct>           <int>  <dbl> <dbl> <dbl>  <dbl>  <dbl> <dbl>   <dbl>  <dbl>
+1 Enriched   Choice              3 0.429      2  0.05   4.30 0.192  0.827 -0.398   1.26 
+2 Enriched   Forced Exposure     3 0.683      2  0.05   4.30 0.146  0.629  0.0543  1.31 
+3 Isolated   Choice              3 0.0625     2  0.05   4.30 0.0625 0.269 -0.206   0.331
+4 Isolated   Forced Exposure     3 0.492      2  0.05   4.30 0.188  0.810 -0.318   1.30 

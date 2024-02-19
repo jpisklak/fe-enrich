@@ -43,7 +43,9 @@ sum_stats <- data %>%
     ci_top = m + moe
     )
 
+sink('../data/sum_stats_sess_22.txt')
 sum_stats
+sink()
 
 # Plot w/ classic confidence intervals  
 ggplot(sum_stats, aes(x = trial_expose, y = m, fill = enrichment)) +
@@ -90,6 +92,7 @@ ggplot(data, aes(x = trial_expose, y = cp, fill = enrichment)) +
   geom_bar(
     stat = "summary",
     fun = mean,
+    linewidth = 1,
     colour = 'black',
     position = "dodge"
   ) +
@@ -98,24 +101,34 @@ ggplot(data, aes(x = trial_expose, y = cp, fill = enrichment)) +
     stat = "summary",
     fun.data = 'mean_cl_boot',
     fun.args = list(conf.int = 0.95),
+    linewidth = 1, 
     width = 0.25,
     position = position_dodge(.9)
   ) +
   
-  geom_point(data = data,
-             size = 4,
-             aes(x = trial_expose, 
-                 y = cp, 
-                 shape = enrichment
-             ),
-             position = position_dodge(.9)
+  geom_jitter(aes(shape = enrichment),
+    size = 4,
+    stroke = 2,
+    alpha = 0.25,
+    # width = 0.1,
+    # height = 0,
+    position = position_jitterdodge(
+      jitter.width = 0.25,
+      jitter.height = 0,
+      dodge.width = 1
+    )
   ) +
-  coord_cartesian(ylim = c(0, 1)) +
-  xlab('Trial Exposure') +
-  ylab('Proportion Suboptimal Choice') +
-  labs(fill = 'Environment',
-       shape = 'Environment') +
-  theme_custom()
+  
+  scale_shape_manual(values = c(1, 0)) +
+
+    coord_cartesian(ylim = c(0, 1)) +
+    xlab("Trial Exposure") +
+    ylab("Proportion Suboptimal Choice") +
+    labs(
+      fill = "Environment",
+      shape = "Environment"
+    ) +
+    theme_custom()
 
 
 ggsave('../plots/barplot-boot-ci.png',
