@@ -1,4 +1,7 @@
 enrichment,trial_expose,session,trial_tot,subject,date,time,exp_prog,group,box,c_IL_sub_pk,c_IL_opt_pk,c_TLA_pk,c_TLB_pk,c_TLC_pk,c_TLD_pk,c_food_sub_count,c_BO_sub_count,c_food_opt_count,c_BO_opt_count,fe_lat_sub_sum,fe_IL_sub_pks,fe_TLA_sub_pks,fe_TLB_sub_pks,fe_food_sub_count,fe_BO_sub_count,fe_lat_sub_count,fe_lat_opt_sum,fe_IL_opt_pks,fe_TLA_opt_pks,fe_TLB_opt_pks,fe_food_opt_count,fe_BO_opt_count,fe_lat_opt_count
+Isolated,Forced Exposure,1,80,6163,230326,150118,S23 FE exp,100% FE Top Left Isolation,1,0,0,0,0,0,0,0,0,0,0,15549,40,282,119,20,20,39,1279,40,403,306,40,0,39
+Isolated,Forced Exposure,2,80,6163,230327,151223,S23 FE exp,100% FE Top Left Isolation,1,0,0,0,0,0,0,0,0,0,0,6428,40,226,130,20,20,38,2146,40,68,87,40,0,39
+Isolated,Forced Exposure,3,80,6163,230328,151144,S23 FE exp,100% FE Top Left Isolation,1,0,0,0,0,0,0,0,0,0,0,4214,40,99,39,20,20,37,2194,40,52,39,40,0,37
 Isolated,Forced Exposure,4,80,6163,230329,165833,S23 FE exp,100% FE Top Left Isolation,1,0,0,0,0,0,0,0,0,0,0,4832,40,82,50,20,20,38,1110,40,37,29,40,0,38
 Isolated,Forced Exposure,5,80,6163,230330,151128,S23 FE exp,100% FE Top Left Isolation,1,0,0,0,0,0,0,0,0,0,0,4395,40,40,3,20,20,33,3641,40,14,14,40,0,33
 Isolated,Forced Exposure,6,80,6163,230401,143518,S23 FE exp,100% FE Top Left Isolation,1,0,0,0,0,0,0,0,0,0,0,3404,40,26,3,20,20,35,5755,40,6,10,40,0,36
