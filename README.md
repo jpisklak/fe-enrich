@@ -42,14 +42,14 @@ To cite this repository please use:
 
 Berrebi, I., Leizear, S., Pisklak, J. M., & McDevitt, M. A. (2024). Forced Exposure and Enrichment in Suboptimal Choice Procedure. Retrieved from https://osf.io/3e24b
 
+BibTeX entry for LaTeX users:
 ```
-  @misc{,
-  title={Forced Exposure and Enrichment in Suboptimal Choice Procedure},
-  url={https://osf.io/3e24b},
-  publisher={OSF},
-  author={Berrebi, Isabella and Leizear, Sarah and Pisklak, Jeffrey M and McDevitt, Margaret A},
-  year={2024},
-  month={May}
+@misc{,
+author={Berrebi, Isabella and Leizear, Sarah and Pisklak, Jeffrey M and McDevitt, Margaret A},
+year={2024},
+title={Forced Exposure and Enrichment in Suboptimal Choice Procedure},
+url={https://osf.io/3e24b},
+publisher={OSF}
 }
 ```
 
