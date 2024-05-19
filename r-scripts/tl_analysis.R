@@ -50,18 +50,18 @@ ggplot(data, aes(x = session, y = pk_prop, colour = subject)) +
 
 
 # Save
-ggsave("../plots/TL_pks.png",
-       dpi = 400,
-       units = "cm", width = 35, height = 16
-)
-
-ggsave("../plots/TL_pks.svg",
-       units = "cm", width = 35, height = 16
-)
-
-ggsave("../plots/TL_pks.pdf",
-       units = "cm", width = 35, height = 16
-)
+# ggsave("../plots/TL_pks.png",
+#        dpi = 400,
+#        units = "cm", width = 35, height = 16
+# )
+# 
+# ggsave("../plots/TL_pks.svg",
+#        units = "cm", width = 35, height = 16
+# )
+# 
+# ggsave("../plots/TL_pks.pdf",
+#        units = "cm", width = 35, height = 16
+# )
 
 
 # Test against indifference
@@ -72,6 +72,8 @@ data <- data %>%
     pk_prop = mean(pk_prop)
   )
 
+qqnorm(data$pk_prop)
+qqline(data$pk_prop)
 
 t.test(data$pk_prop, mu = 0.5)
 cohen.d(data$pk_prop, NA, mu = 0.5, hedges.correction = TRUE)

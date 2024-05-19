@@ -1,5 +1,4 @@
 library(tidyverse)
-library(lmPerm)
 options(
   pillar.print_max = 500,
   pillar.width = Inf
