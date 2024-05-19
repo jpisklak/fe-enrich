@@ -4,7 +4,17 @@
 
 This repository contains the data file and R code associated with the study titled "Environmental Enrichment and Forced-Exposure Training in Suboptimal Choice" by Isabella Berrebi, Sarah Leizear, Jeffrey Pisklak, Margaret A. McDevitt.
 
-- GitHub Repository: [https://github.com/jpisklak/fe-enrich](https://github.com/jpisklak/fe-enrich)
+**GitHub Repository:**
+
+- [https://github.com/jpisklak/fe-enrich](https://github.com/jpisklak/fe-enrich)
+
+**Associated OSF Project:**
+
+- [https://osf.io/3e24b/](https://osf.io/3e24b/)
+
+**Associated OSF Pre-Registration:**
+
+- Berrebi, I., Leizear, S., & McDevitt, M. A. (2024). Forced Exposure and Enrichment in Suboptimal Choice Procedure. [https://doi.org/10.17605/OSF.IO/RVUK5](https://doi.org/10.17605/OSF.IO/RVUK5)
 
 ## Contents
 
