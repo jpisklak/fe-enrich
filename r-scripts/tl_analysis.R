@@ -2,7 +2,8 @@ library(tidyverse)
 library(effsize)
 source('theme-custom.R')
 options(
-  pillar.print_max = 500,
+  pillar.print_min = 35,
+  pillar.print_max = 35,
   pillar.width = Inf
 )
 
@@ -31,11 +32,11 @@ c <- .0001 #constant added to prevent division by 0 if no pecks
 data$pk_prop <- (data$TLA_pk + c) / ((data$TLA_pk + c) + (data$TLB_pk + c))
 
 # Plot
-ggplot(data, aes(x = session, y = pk_prop, colour = subject)) +
+tl_plot <- ggplot(data, aes(x = session, y = pk_prop, colour = subject)) +
   geom_hline(yintercept = 0.5, linetype = 3) +
   geom_line(aes(group = subject), linewidth = 0.75) +
   geom_line(stat = 'summary', fun = mean,
-            linewidth = 2, colour = 'black') + 
+            linewidth = 1.5, colour = 'black') + 
   geom_point(stat = 'summary', fun = mean,
              size = 4, colour = 'black') +
   facet_grid(enrichment ~ trial_expose) +
@@ -48,21 +49,7 @@ ggplot(data, aes(x = session, y = pk_prop, colour = subject)) +
     strip.text = element_text(size = 18, colour = 'black')
   )
 
-
-# Save
-# ggsave("../plots/TL_pks.png",
-#        dpi = 400,
-#        units = "cm", width = 35, height = 16
-# )
-# 
-# ggsave("../plots/TL_pks.svg",
-#        units = "cm", width = 35, height = 16
-# )
-# 
-# ggsave("../plots/TL_pks.pdf",
-#        units = "cm", width = 35, height = 16
-# )
-
+tl_plot
 
 # Test against indifference
 data <- data %>% 

@@ -1,7 +1,8 @@
 library(tidyverse)
 source("theme-custom.R")
 options(
-  pillar.print_max = 500,
+  pillar.print_min = 35,
+  pillar.print_max = 35,
   pillar.width = Inf
 )
 

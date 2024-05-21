@@ -1,7 +1,7 @@
 library(tidyverse)
-library(lmPerm)
 options(
-  pillar.print_max = 500,
+  pillar.print_min = 35,
+  pillar.print_max = 35,
   pillar.width = Inf
 )
 
@@ -66,12 +66,3 @@ w_int <- (aov_summary$`Sum Sq`[3] - (2 - 1) * aov_summary$`Mean Sq`[4]) /
 
 round(c(w_enrich, w_train, w_int), 2)
 
-
-# Permutation Test Two-way ANOVA
-set.seed(2024-02-18)
-rob_model <- lmp(cp ~ trial_expose + enrichment + trial_expose:enrichment,
-  data = data,
-  perm = "Prob"
-)
-
-anova(rob_model)
