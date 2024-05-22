@@ -127,7 +127,7 @@
 <text transform='translate(26.96,239.08) rotate(-90)' text-anchor='middle' style='font-size: 30.00px; font-family: "Arial";' textLength='296.83px' lengthAdjust='spacingAndGlyphs'>Proportion Suboptimal</text>
 <text transform='translate(59.36,239.08) rotate(-90)' text-anchor='middle' style='font-size: 30.00px; font-family: "Arial";' textLength='93.38px' lengthAdjust='spacingAndGlyphs'>Choice</text>
 <rect x='810.91' y='175.37' width='175.74' height='127.42' style='stroke-width: 0.75; fill: #FFFFFF;' />
-<text x='898.78' y='203.85' text-anchor='middle' style='font-size: 28.00px; font-family: "Arial";' textLength='157.20px' lengthAdjust='spacingAndGlyphs'>Environment</text>
+<text x='898.78' y='203.85' text-anchor='middle' style='font-size: 28.00px; font-family: "Arial";' textLength='102.74px' lengthAdjust='spacingAndGlyphs'>Housing</text>
 <rect x='816.39' y='212.27' width='56.69' height='42.52' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
 <line x1='822.06' y1='233.53' x2='867.41' y2='233.53' style='stroke-width: 2.13; stroke-linecap: butt;' />
 <circle cx='844.73' cy='233.53' r='8.89' style='stroke-width: 2.83; fill: #56B4E9;' />

@@ -85,9 +85,9 @@ ggplot(data, aes(
   xlab("Trial Type") +
   ylab("Proportion Suboptimal\nChoice") +
   labs(
-    fill = "Environment",
-    shape = "Environment",
-    linetype = "Environment"
+    fill = "Housing",
+    shape = "Housing",
+    linetype = "Housing"
   ) +
   theme_custom() +
   theme(
