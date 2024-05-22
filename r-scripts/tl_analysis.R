@@ -34,7 +34,7 @@ data$pk_prop <- (data$TLA_pk + c) / ((data$TLA_pk + c) + (data$TLB_pk + c))
 # Plot
 tl_plot <- ggplot(data, aes(x = session, y = pk_prop, colour = subject)) +
   geom_hline(yintercept = 0.5, linetype = 3) +
-  geom_line(aes(group = subject), linewidth = 0.75) +
+  geom_line(linewidth = 0.75) +
   geom_line(stat = 'summary', fun = mean,
             linewidth = 1.5, colour = 'black') + 
   geom_point(stat = 'summary', fun = mean,
@@ -52,18 +52,18 @@ tl_plot <- ggplot(data, aes(x = session, y = pk_prop, colour = subject)) +
 tl_plot
 
 # Test against indifference
-data <- data %>% 
+data_6_10 <- data %>% 
   filter(session > 5 & session < 11) %>% 
   group_by(subject) %>% 
   summarise(
     pk_prop = mean(pk_prop)
   )
 
-qqnorm(data$pk_prop)
-qqline(data$pk_prop)
+qqnorm(data_6_10$pk_prop)
+qqline(data_6_10$pk_prop)
 
-t.test(data$pk_prop, mu = 0.5)
-cohen.d(data$pk_prop, NA, mu = 0.5, hedges.correction = TRUE)
+t.test(data_6_10$pk_prop, mu = 0.5)
+cohen.d(data_6_10$pk_prop, NA, mu = 0.5, hedges.correction = TRUE)
 
 
 
