@@ -28,10 +28,16 @@ data$trial_expose <- factor(data$trial_expose)
 # Choice proportions
 data$cp <- data$c_IL_sub_pk / (data$c_IL_sub_pk + data$c_IL_opt_pk)
 
+#Arcsine Transformation
+data$cp_asin = asin(sqrt(data$cp))
+
 # Collapse sessions
-data <- data %>% 
-  group_by(subject, enrichment, trial_expose) %>% 
-  summarise(cp = mean(cp))
+data <- data %>%
+  group_by(subject, enrichment, trial_expose) %>%
+  summarise(
+    cp = mean(cp),
+    cp_asin = mean(cp_asin)
+  )
 
 # Contrasts
 levels(data$enrichment)
@@ -43,10 +49,10 @@ contrasts(data$enrichment) = Enrich_v_Iso
 contrasts(data$trial_expose) = FE_v_Choice
 
 # Classic ANOVA
-model <- lm(cp ~ enrichment + trial_expose + enrichment:trial_expose,
+model <- lm(cp_asin ~ enrichment + trial_expose + enrichment:trial_expose,
   data = data
 )
-#plot(model)
+# plot(model)
 
 aov_summary <- anova(model)
 aov_summary

@@ -31,6 +31,9 @@ data$TLB_pk <- data$c_TLB_pk + data$fe_TLB_sub_pks
 c <- .0001 #constant added to prevent division by 0 if no pecks
 data$pk_prop <- (data$TLA_pk + c) / ((data$TLA_pk + c) + (data$TLB_pk + c))
 
+#Arcsine Transformation
+data$pk_asin = asin(sqrt(data$pk_prop))
+
 # Plot
 tl_plot <- ggplot(data, aes(x = session, y = pk_prop, colour = subject)) +
   geom_hline(yintercept = 0.5, linetype = 3) +
@@ -56,17 +59,16 @@ data_6_10 <- data %>%
   filter(session > 5 & session < 11) %>% 
   group_by(subject) %>% 
   summarise(
-    pk_prop = mean(pk_prop)
+    prop = mean(pk_prop),
+    prop_asin = mean(pk_asin)
+    
   )
 
-qqnorm(data_6_10$pk_prop)
-qqline(data_6_10$pk_prop)
+qqnorm(data_6_10$prop_asin)
+qqline(data_6_10$prop_asin)
 
-t.test(data_6_10$pk_prop, mu = 0.5)
-cohen.d(data_6_10$pk_prop, NA, mu = 0.5, hedges.correction = TRUE)
-
-
-
-
-
+t.test(data_6_10$prop_asin, mu = asin(sqrt(0.5)))
+cohen.d(data_6_10$prop_asin, NA, 
+        mu = asin(sqrt(0.5)), 
+        hedges.correction = TRUE)
 
