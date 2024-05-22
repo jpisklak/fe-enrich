@@ -30,7 +30,6 @@ Below are common abbreviations used throughout the code:
 - `pk`: Peck
 - `pred`: Prediction
 - `prop`: Proportion
-- `reg`: Regression
 - `sig`: Signaled
 - `sub`: Suboptimal
 - `TL`: Terminal Link (i.e. Delay Phase per Figure 1)
