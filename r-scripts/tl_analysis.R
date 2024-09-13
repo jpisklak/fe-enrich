@@ -1,5 +1,6 @@
 library(tidyverse)
 library(effsize)
+library(BayesFactor)
 source('theme-custom.R')
 options(
   pillar.print_min = 35,
@@ -72,3 +73,4 @@ cohen.d(data_6_10$prop_asin, NA,
         mu = asin(sqrt(0.5)), 
         hedges.correction = TRUE)
 
+ttestBF(data_6_10$prop_asin, mu = asin(sqrt(0.5)))

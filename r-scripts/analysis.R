@@ -1,4 +1,5 @@
 library(tidyverse)
+library(BayesFactor)
 options(
   pillar.print_min = 35,
   pillar.print_max = 35,
@@ -71,4 +72,9 @@ w_int <- (aov_summary$`Sum Sq`[3] - (2 - 1) * aov_summary$`Mean Sq`[4]) /
   (sum(aov_summary$`Sum Sq`) + aov_summary$`Mean Sq`[4])
 
 round(c(w_enrich, w_train, w_int), 2)
+
+# Bayes Factor
+anovaBF(cp_asin ~ enrichment + trial_expose + enrichment:trial_expose,
+        data = data, whichModels = "bottom")
+
 
