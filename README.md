@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the data file and R code associated with the study titled "Environmental Enrichment and Forced-Exposure Training in Suboptimal Choice" by Isabella Berrebi, Sarah Leizear, Jeffrey Pisklak, Margaret A. McDevitt.
+This repository contains the data file and R code associated with the study titled "Environmental Enrichment and Forced-Exposure Training with Pigeons: Responding to the Replication Crisis" by Isabella Berrebi, Sarah Leizear, Jeffrey Pisklak, Margaret A. McDevitt.
 
 **GitHub Repository:**
 
