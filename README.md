@@ -14,7 +14,7 @@ This repository contains the data file and R code associated with the study titl
 
 **Associated OSF Pre-Registration:**
 
-- Berrebi, I., Leizear, S., & McDevitt, M. A. (2024). Forced Exposure and Enrichment in Suboptimal Choice Procedure. [https://doi.org/10.17605/OSF.IO/RVUK5](https://doi.org/10.17605/OSF.IO/RVUK5)
+- Berrebi, I., Leizear, S., & McDevitt, M. A. (2023). Forced Exposure and Enrichment in Suboptimal Choice Procedure. [https://doi.org/10.17605/OSF.IO/RVUK5](https://doi.org/10.17605/OSF.IO/RVUK5)
 
 ## Contents
 
@@ -39,13 +39,13 @@ Below are common abbreviations used throughout the code:
 
 To cite this repository please use:
 
-Berrebi, I., Leizear, S., Pisklak, J. M., & McDevitt, M. A. (2024). Forced Exposure and Enrichment in Suboptimal Choice Procedure. Retrieved from https://osf.io/3e24b
+Berrebi, I., Leizear, S., Pisklak, J. M., & McDevitt, M. A. (2025). Forced Exposure and Enrichment in Suboptimal Choice Procedure. Retrieved from https://osf.io/3e24b
 
 BibTeX entry for LaTeX users:
 ```
 @misc{,
   author={Berrebi, Isabella and Leizear, Sarah and Pisklak, Jeffrey M and McDevitt, Margaret A},
-  year={2024},
+  year={2025},
   title={Forced Exposure and Enrichment in Suboptimal Choice Procedure},
   url={https://osf.io/3e24b},
   publisher={OSF}
