@@ -48,7 +48,8 @@ BibTeX entry for LaTeX users:
   title     = {Forced Exposure and Enrichment in Suboptimal Choice Procedure},
   year      = {2025},
   publisher = {OSF},
-  url       = {https://osf.io/3e24b}
+  url       = {https://osf.io/3e24b},
+  note      = {GitHub Repo: \url{https://github.com/jpisklak/fe-enrich}},
 }
 ```
 
