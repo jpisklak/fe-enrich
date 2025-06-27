@@ -57,13 +57,14 @@ You may also cite the code and data repository directly:
 Berrebi, I., Leizear, S., Pisklak, J. M., & McDevitt, M. A. (2025). *Environmental enrichment and forced-exposure training with pigeons: Responding to the replication crisis* [Data and code repository]. GitHub. https://github.com/jpisklak/fe-enrich
 
 ```bibtex
-@misc{ ,
-  author       = {Berrebi, Isabella and Leizear, Sarah and Pisklak, Jeffrey M. and McDevitt, Margaret A.},
+@online{ ,
+  author       = {Berrebi, I. and Leizear, S. and \textbf{Pisklak, J. M.} and McDevitt, M. A.},
   title        = {Environmental Enrichment and Forced-Exposure Training with Pigeons: Responding to the Replication Crisis},
   year         = {2025},
-  howpublished = {GitHub},
+  organization = {GitHub},
   note         = {Data and code repository},
-  url          = {https://github.com/jpisklak/fe-enrich}
+  url          = {https://github.com/jpisklak/fe-enrich},
+  keywords     = {oar}
 }
 ```
 
@@ -74,11 +75,11 @@ To cite the associated pre-registration on the Open Science Framework:
 Berrebi, I., Leizear, S., & McDevitt, M. A. (2023). *Forced exposure and enrichment in suboptimal choice procedure* [Pre-registration]. Open Science Framework. https://doi.org/10.17605/OSF.IO/RVUK5
 
 ```bibtex
-@misc{ ,
+@online{ ,
   author       = {Berrebi, Isabella and Leizear, Sarah and McDevitt, Margaret A.},
   title        = {Forced Exposure and Enrichment in Suboptimal Choice Procedure},
   year         = {2023},
-  howpublished = {Open Science Framework},
+  organization = {Open Science Framework},
   note         = {Pre-registration},
   doi          = {10.17605/OSF.IO/RVUK5}
 }
