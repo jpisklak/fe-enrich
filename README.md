@@ -63,8 +63,7 @@ Berrebi, I., Leizear, S., Pisklak, J. M., & McDevitt, M. A. (2025). *Environment
   year         = {2025},
   organization = {GitHub},
   note         = {Data and code repository},
-  url          = {https://github.com/jpisklak/fe-enrich},
-  keywords     = {oar}
+  url          = {https://github.com/jpisklak/fe-enrich}
 }
 ```
 
