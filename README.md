@@ -58,7 +58,7 @@ Berrebi, I., Leizear, S., Pisklak, J. M., & McDevitt, M. A. (2025). *Environment
 
 ```bibtex
 @misc{ ,
-  author       = {Berrebi, I. and Leizear, S. and \textbf{Pisklak, J. M.} and McDevitt, M. A.},
+  author       = {Berrebi, Isabella and Leizear, Sarah and Pisklak, Jeffrey M. and McDevitt, Margaret A.},
   title        = {Environmental Enrichment and Forced-Exposure Training with Pigeons: Responding to the Replication Crisis},
   year         = {2025},
   organization = {GitHub},
